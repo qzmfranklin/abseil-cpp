@@ -208,8 +208,8 @@ absl_cc_library(
         ':base',
         ':base_core_headers',
         ':numeric_int128',
-        '//third_party/cctz:civil_time',
-        '//third_party/cctz:time_zone',
+        '//third_party/cc/cctz:civil_time',
+        '//third_party/cc/cctz:time_zone',
     ],
 )
 
@@ -224,7 +224,7 @@ absl_cc_library(
     deps = [
         ':time',
         ':base',
-        '//third_party/cctz:time_zone',
+        '//third_party/cc/cctz:time_zone',
     ],
 )
 
@@ -252,8 +252,8 @@ cc_test(
         ':base',
         ':base_config',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
-        '//third_party/cctz:time_zone',
+        '//third_party/cc/gtest:gtest_main',
+        '//third_party/cc/cctz:time_zone',
     ],
 )
 
@@ -325,7 +325,7 @@ cc_test(
     deps = [
         ':synchronization',
         ':time',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -337,7 +337,7 @@ cc_test(
     deps = [
         ':synchronization',
         ':time',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -350,7 +350,7 @@ cc_test(
         ':synchronization_graphcycles_internal',
         ':base',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -379,7 +379,7 @@ cc_test(
         ':base_core_headers',
         ':memory',
         ':time',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -391,7 +391,7 @@ cc_test(
     deps = [
         ':synchronization',
         ':time',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -406,7 +406,7 @@ absl_cc_library(
         ':base_malloc_extension',
         ':strings',
         ':time',
-        '//third_party/gtest:gtest',
+        '//third_party/cc/gtest:gtest',
     ],
     alwayslink = 1,
 )
@@ -422,7 +422,7 @@ cc_test(
         ':base_malloc_extension',
         ':strings',
         ':time',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -463,7 +463,7 @@ cc_test(
         ':memory',
         ':base',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -497,7 +497,7 @@ cc_test(
         ':base',
         ':base_core_headers',
         ':meta_type_traits',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -540,7 +540,7 @@ cc_test(
         ':base_config',
         ':base_exception_testing',
         ':container_test_instance_tracker',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -557,7 +557,7 @@ cc_test(
         ':base_config',
         ':base_exception_testing',
         ':container_test_instance_tracker',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -586,7 +586,7 @@ cc_test(
         ':container_fixed_array',
         ':container_inlined_vector',
         ':strings',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -603,7 +603,7 @@ cc_test(
         ':container_fixed_array',
         ':container_inlined_vector',
         ':strings',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -645,7 +645,7 @@ cc_test(
         ':base_config',
         ':meta_type_traits',
         ':strings',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -664,7 +664,7 @@ cc_test(
     copts = ABSL_TEST_COPTS,
     deps = [
         ':algorithm',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -691,7 +691,7 @@ cc_test(
         ':base_core_headers',
         ':memory',
         ':types_span',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -713,7 +713,7 @@ cc_test(
     deps = [
         ':meta_type_traits',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -876,7 +876,7 @@ cc_test(
     deps = [
         ':base',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -901,7 +901,7 @@ cc_test(
     copts = ABSL_TEST_COPTS + ABSL_EXCEPTIONS_FLAG,
     deps = [
         ':base_throw_delegate',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -913,7 +913,7 @@ absl_cc_library(
     visibility = ['//visibility:__pkg__'],
     deps = [
         ':base_config',
-        '//third_party/gtest:gtest',
+        '//third_party/cc/gtest:gtest',
     ],
 )
 
@@ -936,7 +936,7 @@ absl_cc_library(
         ':meta_type_traits',
         ':strings',
         ':types_optional',
-        '//third_party/gtest:gtest',
+        '//third_party/cc/gtest:gtest',
     ],
 )
 
@@ -947,7 +947,7 @@ cc_test(
     deps = [
         ':base_exception_safety_testing',
         ':memory',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -960,7 +960,7 @@ cc_test(
         ':base_internal',
         ':memory',
         ':strings',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -976,7 +976,7 @@ absl_cc_library(
         ':base_core_headers',
         ':base_spinlock_wait',
         ':synchronization',
-        '//third_party/gtest:gtest',
+        '//third_party/cc/gtest:gtest',
     ],
     alwayslink = 1,
 )
@@ -991,7 +991,7 @@ cc_test(
         ':base_core_headers',
         ':base_spinlock_wait',
         ':synchronization',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1016,7 +1016,7 @@ cc_test(
         ':base',
         ':base_config',
         ':base_endian',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1027,7 +1027,7 @@ cc_test(
     deps = [
         ':base_config',
         ':synchronization_thread_pool',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1039,7 +1039,7 @@ cc_test(
         ':base',
         ':base_core_headers',
         ':synchronization',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1049,7 +1049,7 @@ cc_test(
     copts = ABSL_TEST_COPTS,
     deps = [
         ':base',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1061,7 +1061,7 @@ cc_test(
     deps = [
         ':base',
         ':synchronization',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1090,7 +1090,7 @@ cc_test(
         ':base',
         ':base_core_headers',
         ':synchronization',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1113,7 +1113,7 @@ cc_test(
     ],
     deps = [
         ':base_malloc_extension',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1140,7 +1140,7 @@ cc_test(
         ':base_core_headers',
         ':base_exception_testing',
         ':memory',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1153,7 +1153,7 @@ cc_test(
         ':base_core_headers',
         ':base_exception_testing',
         ':memory',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1181,7 +1181,7 @@ cc_test(
         ':base_exception_testing',
         ':memory',
         ':strings',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1197,7 +1197,7 @@ cc_test(
         ':base_exception_testing',
         ':memory',
         ':strings',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1218,7 +1218,7 @@ cc_test(
     copts = ABSL_TEST_COPTS,
     deps = [
         ':container_test_instance_tracker',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1336,7 +1336,7 @@ cc_test(
     deps = [
         ':debugging_leak_check_api_enabled_for_testing',
         ':base',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1347,7 +1347,7 @@ cc_test(
     deps = [
         ':debugging_leak_check_api_disabled_for_testing',
         ':base',  # for raw_logging
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1363,7 +1363,7 @@ cc_test(
         ':debugging_leak_check_api_enabled_for_testing',
         ':debugging_leak_check_disable',
         ':base',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1441,7 +1441,7 @@ cc_test(
     visibility = ['//visibility:private'],
     deps = [
         ':strings',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1458,7 +1458,7 @@ cc_test(
         ':strings',
         ':base_core_headers',
         ':container_fixed_array',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1471,7 +1471,7 @@ cc_test(
     deps = [
         ':strings',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1487,7 +1487,7 @@ cc_test(
     deps = [
         ':strings',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1503,7 +1503,7 @@ cc_test(
         ':strings_internal',
         ':strings',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1520,7 +1520,7 @@ cc_test(
         #':base_config',
         #':base_core_headers',
         #':base_dynamic_annotations',
-        #'//third_party/gtest:gtest_main',
+        #'//third_party/cc/gtest:gtest_main',
     #],
 #)
 
@@ -1535,7 +1535,7 @@ cc_test(
     deps = [
         ':strings',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1547,7 +1547,7 @@ cc_test(
     visibility = ['//visibility:private'],
     deps = [
         ':strings',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1560,7 +1560,7 @@ cc_test(
         ':strings',
         ':base_core_headers',
         ':base_dynamic_annotations',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1572,7 +1572,7 @@ cc_test(
     visibility = ['//visibility:private'],
     deps = [
         ':strings_internal',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1588,7 +1588,7 @@ cc_test(
     deps = [
         ':base_core_headers',
         ':meta_type_traits',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1602,7 +1602,7 @@ cc_test(
         ':strings',
         ':base_core_headers',
         ':memory',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1615,7 +1615,7 @@ cc_test(
     deps = [
         ':strings',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1635,7 +1635,7 @@ cc_test(
         ':strings',
         ':base',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1647,7 +1647,7 @@ cc_test(
     visibility = ['//visibility:private'],
     deps = [
         ':strings',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1657,7 +1657,7 @@ cc_test(
     copts = ABSL_TEST_COPTS,
     deps = [
         ':strings_internal',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
 
@@ -1681,6 +1681,6 @@ cc_test(
     deps = [
         ':utility',
         ':base_core_headers',
-        '//third_party/gtest:gtest_main',
+        '//third_party/cc/gtest:gtest_main',
     ],
 )
